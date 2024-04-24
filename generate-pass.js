@@ -1,5 +1,11 @@
 const { request, response } = require("express");
 const { PKPass } = require("passkit-generator");
+require('dotenv').config();
+
+// Now you can access the environment variables
+const passTypeIdentifier = process.env.PASS_TYPE_IDENTIFIER;
+const webServiceURL = process.env.WEB_SERVICE_URL;
+const teamIdentifier = process.env.TEAM_IDENTIFIER;
 var fs = require('file-system');
 var axios = require('axios');
 
@@ -18,11 +24,11 @@ try {
             signerKey: signerKey,
         }
     }, {
-        passTypeIdentifier: "pass.io.knowledgecatalyst",
-        webServiceURL : "https://europe-west1-passkit-io.cloudfunctions.net/pfr",
+        passTypeIdentifier: passTypeIdentifier,
+        webServiceURL : webServiceURL,
         authenticationToken : "vxwxd7J8AlNNFPS8k0a0FfUFtq0ewzFdc",
         description: "E-Ticket Sheila On 7 Concert",
-        teamIdentifier : "5995BGR6QF",
+        teamIdentifier : teamIdentifier,
         logoText: "(DEMO) Sheila On 7 Concert",
         serialNumber: "PASS-213213"
     })
