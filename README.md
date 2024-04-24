@@ -18,7 +18,7 @@ Logo, Icon, Thumbnail you can set by attach file in the same folders or dynamica
 ![alt text](image-2.png)
 
 ### Pass Details:
-![alt text](image-1.png)
+![alt text](image-3.png)
 
 
 
