@@ -5,17 +5,25 @@ I Also add some sample pass on SamplePasses folders or download on [apple-websit
 
 ## Setup the project
 1. ``` npm install ```
-2. Copy APPLEWWDR.pem, pass.pem, signing.key on credential folders
+2. Copy APPLEWWDR.pem, pass.pem, signing.key on credential folders. Here's the [tutorial](https://github.com/alexandercerutti/passkit-generator/wiki/Generating-Certificates)
 3. Setting .env file.
 4. run on terminal ```node generate-pass.js```
 
 ## Result
 Here's the result of pass that I created.
-For Apple pass we just allow to create on 3 level (PrimaryFields, SecondaryFields and AuxiliaryFields) and for the rest of information can store in details (Backfields).
+Apple pass we just allow to create on 3 level (PrimaryFields, SecondaryFields and AuxiliaryFields) and for the rest of information can store in details (Backfields).
+Logo, Icon, Thumbnail you can set by attach file in the same folders or dynamically changes by code.
 
 ### Pass Preview: 
-![alt text](image.png)
+![alt text](image-2.png)
 
 ### Pass Details:
 ![alt text](image-1.png)
+
+
+
+# References
+- https://developer.apple.com/documentation/walletpasses/pass
+- https://github.com/alexandercerutti/passkit-generator/wiki/Generating-Certificates
+- https://youtu.be/rJZdPoXHtzI?si=VUeFpG9NkBFNXh7k
 

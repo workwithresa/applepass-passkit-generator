@@ -36,7 +36,7 @@ try {
         newPass.primaryFields.push(
             {
                 key : "primary",
-                label : "name",
+                label : "NAME",
                 value: "Resa Dwiantoro"
             }
         )
@@ -117,6 +117,8 @@ try {
         // newPass.addBuffer('icon.png', buffer);
         // newPass.addBuffer('icon@2x.png', buffer);
 
+        // [YOU CAN SET YOUR BARCODE VALUE HERE, OR CAN CHANGES THE TYPE. HERES THE REFERENCES]
+        // https://developer.apple.com/documentation/walletpasses/pass/barcodes
         newPass.setBarcodes("DEMO ONLY")
         const bufferData = newPass.getAsBuffer();
         fs.writeFileSync("new.pkpass", bufferData);
